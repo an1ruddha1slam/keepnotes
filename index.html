@@ -1,54 +1,33 @@
 <!DOCTYPE html>
-<html lang="en-US" dir="ltr" class="eC9N2e">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=240, initial-scale=1.0">
-  <title>Keep Notes Wrapper</title>
+  <title>Keep Notes 240x320</title>
   <style>
-    /* Global box-sizing */
-    *, :after, :before {
-      box-sizing: inherit;
-    }
-    html {
-      box-sizing: border-box;
-      -webkit-tap-highlight-color: rgba(0,0,0,0);
-    }
-
-    /* Root variables you shared */
-    :root {
-      --wf-tfs: calc(var(--c-tfs,32)/16*1rem);
-      --wf-stfs: calc(var(--c-stfs,16)/16*1rem);
-
-      --gm3-sys-color-background: rgb(255 255 255 / 1);
-      --gm3-sys-color-on-background: rgb(31 31 31 / 1);
-      --gm3-sys-color-primary: rgb(11 87 208 / 1);
-      --gm3-sys-color-on-primary: rgb(255 255 255 / 1);
-    }
-
     body {
       margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #000;
+    }
+    .frame-container {
       width: 240px;
       height: 320px;
-      background-color: var(--gm3-sys-color-background);
-      color: var(--gm3-sys-color-on-background);
-      font-family: sans-serif;
-      font-size: var(--wf-stfs);
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      border: 2px solid #333;
+      overflow: hidden;
     }
-
-    .note {
-      background-color: var(--gm3-sys-color-primary);
-      color: var(--gm3-sys-color-on-primary);
-      padding: 8px;
-      border-radius: 4px;
+    iframe {
+      width: 240px;
+      height: 320px;
+      border: none;
     }
   </style>
 </head>
 <body>
-  <div class="note">
-    Hello, this is your Keep Notes wrapper element!
+  <div class="frame-container">
+    <iframe src="https://accounts.google.com/v3/signin/challenge/pwd?TL=APouJz6ZCO0JgZjTycq14MFlIML9niy3OKQBqXv6ZTY47wIEySs-6jTRfTd49sI9&btmpl=mobile&cid=2&continue=https%3A%2F%2Fkeep.google.com%2F&dsh=S270104874%3A1778318170984252&flowEntry=ServiceLogin&flowName=GlifWebSignIn&followup=https%3A%2F%2Fkeep.google.com%2F&ifkv=AWa2Pat63gLoOJV6xP2A-wQLKens6AgHC7GfbY8n_apryb7wjBXoOlv4w92s92OZs7B98eP6Uud0&ltmpl=keep&service=memento"></iframe>
   </div>
 </body>
 </html>
