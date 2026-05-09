@@ -1,27 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Google Keep 240x320</title>
+  <meta name="viewport" content="width=240, height=320, initial-scale=1.0">
   <style>
     body {
+      margin: 0;
+      background: #000;
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
-      margin: 0;
-      background: #f0f0f0;
     }
-
-    .iframe-container {
-      width: 240px;   /* fixed width */
-      height: 320px;  /* fixed height */
+    .phone-frame {
+      width: 240px;
+      height: 320px;
       border: 2px solid #ccc;
-      border-radius: 8px;
+      border-radius: 12px;
       overflow: hidden;
+      box-shadow: 0 0 20px rgba(255,255,255,0.3);
     }
-
-    .iframe-container iframe {
+    .phone-frame iframe {
       width: 100%;
       height: 100%;
       border: none;
@@ -29,8 +27,8 @@
   </style>
 </head>
 <body>
-  <div class="iframe-container">
-    <iframe src="https://keep.google.com" allowfullscreen></iframe>
+  <div class="phone-frame">
+    <iframe src="https://keep.google.com"></iframe>
   </div>
 </body>
 </html>
