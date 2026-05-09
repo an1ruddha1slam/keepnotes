@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr" class="eC9N2e">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=240, initial-scale=1.0">
+  <title>Keep Notes Wrapper</title>
+  <style>
+    /* Global box-sizing */
+    *, :after, :before {
+      box-sizing: inherit;
+    }
+    html {
+      box-sizing: border-box;
+      -webkit-tap-highlight-color: rgba(0,0,0,0);
+    }
+
+    /* Root variables you shared */
+    :root {
+      --wf-tfs: calc(var(--c-tfs,32)/16*1rem);
+      --wf-stfs: calc(var(--c-stfs,16)/16*1rem);
+
+      --gm3-sys-color-background: rgb(255 255 255 / 1);
+      --gm3-sys-color-on-background: rgb(31 31 31 / 1);
+      --gm3-sys-color-primary: rgb(11 87 208 / 1);
+      --gm3-sys-color-on-primary: rgb(255 255 255 / 1);
+    }
+
+    body {
+      margin: 0;
+      width: 240px;
+      height: 320px;
+      background-color: var(--gm3-sys-color-background);
+      color: var(--gm3-sys-color-on-background);
+      font-family: sans-serif;
+      font-size: var(--wf-stfs);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .note {
+      background-color: var(--gm3-sys-color-primary);
+      color: var(--gm3-sys-color-on-primary);
+      padding: 8px;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <div class="note">
+    Hello, this is your Keep Notes wrapper element!
+  </div>
+</body>
+</html>
